@@ -1,4 +1,4 @@
-!pip install datasketch
+#!pip install datasketch
 
 import numpy as np
 import pandas as pd
@@ -6,10 +6,10 @@ import re
 import time
 from datasketch import MinHash, MinHashLSHForest
 import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+nltk.download('stopwords')
+nltk.download('punkt')
 
 #Preproccessing the input dataset
 def preprocess(text): 
